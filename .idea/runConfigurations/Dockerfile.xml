@@ -6,7 +6,7 @@
         <option name="command" value="" />
         <option name="containerName" value="martin_hello" />
         <option name="entrypoint" value="" />
-        <option name="imageTag" value="martin/gs-spring-boot-docker" />
+        <option name="imageTag" value="gliderpilotmp/gs-spring-boot-docker" />
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>
