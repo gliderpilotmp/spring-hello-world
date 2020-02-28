@@ -27,3 +27,5 @@ Actions used:
 - Java -> on every commit -> build and test run 
 - Docker -> on every commit -> builds docker image, tests and pushs it to docker.pkg.github.io
 - Docker Image CI -> on publishing a release -> pushs dockerimage to dockerhub gliderpilotmp/tag-name (spring-hello-world)
+    see https://www.prestonlamb.com/blog/creating-a-docker-image-with-github-actions
+    uses DOCKER_PASSWORD and DOCKER_USERNAME secrets
