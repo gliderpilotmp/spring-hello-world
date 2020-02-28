@@ -21,7 +21,6 @@ ARG DEPENDENCY=tmp/target/dependency
 COPY --from=MAVEN_TOOL_CHAIN ${DEPENDENCY}/BOOT-INF/classes /app
 COPY --from=MAVEN_TOOL_CHAIN ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=MAVEN_TOOL_CHAIN ${DEPENDENCY}/META-INF /app/META-INF
-
-RUN ls -l ${WORKDIR}/*
+#RUN ls -l ${WORKDIR}
 
 ENTRYPOINT ["java","-cp","app:app/lib/*","hello.ApplicationHello"]
