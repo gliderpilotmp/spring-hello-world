@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: gliderpilotmp/gs-spring-boot-docker
+  IMAGE_NAME: gs-spring-boot-docker
 
 jobs:
   # Run tests.
