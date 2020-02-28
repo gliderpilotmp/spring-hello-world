@@ -8,6 +8,7 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.example</groupId>
 	<artifactId>springHelloWorld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -49,6 +50,35 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy org.webjars dependency to jar</id>
+						<phase>install</phase>
+						<goals><goal>run</goal></goals>
+						<configuration>
+							<target>
+							<!--	<copy todir="${project.build.directory}/dependency" flatten="true">
+									<fileset dir="${project.build.directory}">
+										<include name="**/*.jar"/>
+									</fileset>
+								</copy>-->
+								<mkdir dir="${project.build.directory}/dependency"/>
+								<unzip dest="${project.build.directory}/dependency">
+									<fileset dir="${project.build.directory}">
+										<include name="**/*.jar"/>
+									</fileset>
+								</unzip>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
