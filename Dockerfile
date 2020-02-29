@@ -24,3 +24,5 @@ COPY --from=MAVEN_TOOL_CHAIN ${DEPENDENCY}/META-INF /app/META-INF
 #RUN ls -l ${WORKDIR}
 
 ENTRYPOINT ["java","-cp","app:app/lib/*","hello.ApplicationHello"]
+
+EXPOSE 8080
