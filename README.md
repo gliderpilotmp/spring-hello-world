@@ -1,6 +1,8 @@
 Hello world example in Spring Boot 
 Author Martin Pirker 2020-02-28
 
+localhost:8080 -> "Hello World Docker"
+
 Derived from Spring boot example for docker https://spring.io/guides/gs/spring-boot-docker/
 
 Dockerfile uses
@@ -21,7 +23,7 @@ or
 docker pull gliderpilotmp/spring-hello-world 
 docker container run --name martin_hello3 -d -p 9999:8080 gliderpilotmp/spring-hello-world 
 
-to expose container on port 9999 routing to 8080 spring boot app in container
+for container on port 9999 mapping to 8080 spring boot app in container
 
 Actions used:
 - Java -> on every commit -> build and test run 
