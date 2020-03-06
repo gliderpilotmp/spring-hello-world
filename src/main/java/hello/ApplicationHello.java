@@ -11,7 +11,7 @@ public class ApplicationHello {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello Docker World";
+        return "Hello Docker World! This is a Spring Boot Application running in Docker";
     }
 
     public static void main(String[] args) {

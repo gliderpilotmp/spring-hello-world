@@ -1,7 +1,7 @@
 Hello world example in Spring Boot 
 Author Martin Pirker 2020-02-28
 
-localhost:8080 -> "Hello World Docker"
+localhost:8080 -> "Hello Docker World"
 
 Derived from Spring boot example for docker https://spring.io/guides/gs/spring-boot-docker/
 
